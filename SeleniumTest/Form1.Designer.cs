@@ -33,6 +33,7 @@ namespace SeleniumTest
             this.btnOpenBrw2 = new System.Windows.Forms.Button();
             this.txbURL = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGetMail = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenBrw
@@ -71,11 +72,22 @@ namespace SeleniumTest
             this.label1.TabIndex = 3;
             this.label1.Text = "URL";
             // 
+            // btnGetMail
+            // 
+            this.btnGetMail.Location = new System.Drawing.Point(78, 282);
+            this.btnGetMail.Name = "btnGetMail";
+            this.btnGetMail.Size = new System.Drawing.Size(75, 23);
+            this.btnGetMail.TabIndex = 4;
+            this.btnGetMail.Text = "Get mail";
+            this.btnGetMail.UseVisualStyleBackColor = true;
+            this.btnGetMail.Click += new System.EventHandler(this.btnGetMail_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(716, 268);
+            this.ClientSize = new System.Drawing.Size(716, 360);
+            this.Controls.Add(this.btnGetMail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbURL);
             this.Controls.Add(this.btnOpenBrw2);
@@ -94,6 +106,7 @@ namespace SeleniumTest
         private System.Windows.Forms.Button btnOpenBrw2;
         private System.Windows.Forms.TextBox txbURL;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGetMail;
     }
 }
 
